@@ -1,0 +1,18 @@
+from collections import deque
+a="MISSISSIPI"
+b=deque(a)
+print(b,type(b))
+b.rotate(1)
+print(b,type(b))
+b.rotate(2)
+print(b,type(b))
+b.rotate(3)
+print(b,type(b))
+b.rotate(-1)
+print(b,type(b))
+b.rotate(-2)
+print(b,type(b))
+b.rotate(-3)
+print(b,type(b))
+b.rotate(5)
+print(b,type(b))
