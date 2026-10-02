@@ -118,25 +118,117 @@ for num in numbers:
         print(num, "Even")
     else:
         print(num, "Odd")
+'''
+I iterate through every number in the list. I use the modulus operator to check the remainder when dividing by 2. If the remainder is zero, the number is even; otherwise, it is odd.”
+'''
 
+# 12. Sum of Digits ⭐⭐⭐
+n = 12345
+total = 0
+while n > 0:
+    digit = n % 10
+    total += digit
+    n = n // 10
+print(total)
+'''
+I initialize total to zero. The modulus operator extracts the last digit. I add that digit to total. Then integer division by 10 removes the last digit. I repeat this until the number becomes zero.”
+'''
 
+# 13. Reverse a Number ⭐⭐⭐
+n = 1234
+reverse = 0
+while n > 0:
+    digit = n % 10
+    reverse = reverse * 10 + digit
+    n = n // 10
+print(reverse)
+'''
+I extract the last digit using % 10. Then I shift the existing reverse number one position to the left by multiplying it by 10 and add the extracted digit. Finally, I remove the last digit from the original number using // 10.”
+'''
 
+# 14. Check Armstrong Number ⭐⭐⭐
+n = 153
+total = 0
+temp = n
+while temp > 0:
+    digit = temp % 10
+    total += digit ** 3
+    temp = temp // 10
+if total == n:
+    print("Armstrong")
+else:
+    print("Not Armstrong")
+'''
+“I store the original number in n and make a temporary copy because I need the original number for comparison later. I extract each digit using % 10, cube the digit, and add it to total. After processing all digits, I compare the calculated total with the original number.”
+'''
 
+# 15. Find Common Elements Between Two Lists ⭐⭐⭐
+list1 = [1, 2, 3, 4]
+list2 = [3, 4, 5, 6]
+common = []
+for num in list1:
+    if num in list2:
+        common.append(num)
+print(common)
+'''
+I create an empty list to store common elements. Then I iterate through the first list and check whether each element exists in the second list. If it exists, I append it to the result list.”
+'''
 
+# 16. Find Missing Number ⭐⭐⭐⭐ - Suppose: [1, 2, 3, 5] Expected numbers are 1 to 5.
+numbers = [1, 2, 3, 5]
+n = 5
+expected_sum = n * (n + 1) // 2
+actual_sum = sum(numbers)
+missing = expected_sum - actual_sum
+print(missing)
+'''
+I calculate the expected sum from 1 to n using the mathematical formula n * (n + 1) // 2. Then I calculate the actual sum of the list. The difference between these two sums gives me the missing number.”
+'''
 
+# 17. Check Anagram ⭐⭐⭐⭐ - Two strings are anagrams if they contain the same characters with the same frequency.
+str1 = "listen"
+str2 = "silent"
+if sorted(str1) == sorted(str2):
+    print("Anagram")
+else:
+    print("Not Anagram")
+'''
+I sort both strings alphabetically. If both sorted strings are equal, they contain the same characters with the same frequency, so they are anagrams.”
+'''
 
+# 18. Find First Non-Repeating Character ⭐⭐⭐⭐
+text = "aabbcdde"
 
+for char in text:
+    if text.count(char) == 1:
+        print(char)
+        break
+'''
+I iterate through each character and use count() to find how many times that character occurs. If the count is exactly one, it is the first non-repeating character, so I print it and use break to stop the loop.”
+'''
 
+# 19. Sort a List Without sort() ⭐⭐⭐⭐
+numbers = [5, 2, 8, 1, 3]
+for i in range(len(numbers)):
+    for j in range(i + 1, len(numbers)):
+        if numbers[i] > numbers[j]:
+            numbers[i], numbers[j] = numbers[j], numbers[i]
+print(numbers)
 
+'''
+I compare each element with the elements after it. If the current element is greater than a later element, I swap them. By repeatedly doing this, smaller values move toward the beginning of the list.”
+'''
 
-
-
-
-
-
-
-
-
+# 20. Find Duplicate Elements ⭐⭐⭐⭐
+numbers = [1, 2, 3, 2, 4, 5, 3]
+duplicates = []
+for num in numbers:
+    if numbers.count(num) > 1 and num not in duplicates:
+        duplicates.append(num)
+print(duplicates)
+'''
+I iterate through every number and check how many times it occurs using count(). If its frequency is greater than one, it is a duplicate. I also check num not in duplicates so that I don't add the same duplicate multiple times.”
+'''
 
 
 
