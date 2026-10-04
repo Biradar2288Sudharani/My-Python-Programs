@@ -242,5 +242,17 @@ print(duplicates)
 I iterate through every number and check how many times it occurs using count(). If its frequency is greater than one, it is a duplicate. I also check num not in duplicates so that I don't add the same duplicate multiple times.”
 '''
 
+# 🔥 30. Find Numbers Appearing More Than Once
+numbers = [1, 2, 3, 2, 4, 3, 5, 3]
+
+frequency = {}
+
+for num in numbers:
+    frequency[num] = frequency.get(num, 0) + 1
+
+for num, count in frequency.items():
+    if count > 1:
+        print(num, count)
+
 
 
