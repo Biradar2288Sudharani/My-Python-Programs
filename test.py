@@ -54,3 +54,15 @@ for word in words:
         matched_words.append(word)
 print("Count of Word = ", count)
 print("Matched Words = ", matched_words))
+
+# 🔥 30. Find Numbers Appearing More Than Once
+numbers = [1, 2, 3, 2, 4, 3, 5, 3]
+
+frequency = {}
+
+for num in numbers:
+    frequency[num] = frequency.get(num, 0) + 1
+
+for num, count in frequency.items():
+    if count > 1:
+        print(num, count)
