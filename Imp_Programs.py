@@ -1,9 +1,9 @@
-# 1. Reverse a String ⭐⭐⭐
+# 1. Reverse a String ⭐⭐⭐⭐⭐
 text = "python"
 reverse = text[::-1]
 print(reverse)
 
-# 2. Check Whether a String Is Palindrome ⭐⭐⭐
+# 2. Check Whether a String Is Palindrome ⭐⭐⭐⭐⭐
 text = "madam"
 if text == text[::-1]:
     print("Palindrome")
@@ -25,7 +25,7 @@ I initialize factorial to 1 because multiplication should start from 1. Then the
 the calculation becomes 1 × 2 × 3 × 4 × 5, which gives 120.”
 '''
 
-# 4. Fibonacci Series ⭐⭐⭐
+# 4. Fibonacci Series ⭐⭐⭐⭐
 n = 7
 a = 0
 b = 1
@@ -37,7 +37,7 @@ I initialize the first two Fibonacci numbers as 0 and 1. In every iteration, I p
 Python's multiple assignment allows me to update both variables in one statement.”
 '''
 
-# 5. Check Prime Number ⭐⭐⭐
+# 5. Check Prime Number ⭐⭐⭐⭐
 n = 17
 if n <= 1:
     print("Not Prime")
@@ -54,13 +54,24 @@ Then I check whether any number from 2 to n-1 divides it completely. If n % i is
 If the loop completes without finding a divisor, it is prime.”
 '''
 
-# 6. Find Largest Number in a List ⭐⭐⭐
+# 6. Find Largest Number in a List ⭐⭐⭐⭐
 numbers = [10, 25, 7, 45, 18]
 largest = numbers[0]
 for num in numbers:
     if num > largest:
         largest = num
 print(largest)
+# OR - Without sorting
+numbers = [10, 25, 5, 40, 15]
+largest = float('-inf')
+second_largest = float('-inf')
+for num in numbers:
+    if num > largest:
+        second_largest = largest
+        largest = num
+    elif num > second_largest and num != largest:
+        second_largest = num
+print(second_largest)
 '''
 I initially assume the first element is the largest. Then I iterate through every element. 
 If the current number is greater than largest, I update largest. After the loop finishes, it contains the maximum value.”
@@ -89,7 +100,7 @@ I create a string containing all vowels and initialize the counter to zero. Then
 If the character exists in the vowels string, I increment the counter. Finally, I print the total number of vowels.”
 '''
 
-# 9. Count Frequency of Characters ⭐⭐⭐
+# 9. Count Frequency of Characters ⭐⭐⭐⭐⭐
 text = "banana"
 frequency = {}
 for char in text:
@@ -107,6 +118,13 @@ If the character already exists, I increase its count; otherwise, I initialize i
 numbers = [1, 2, 2, 3, 4, 4, 5]
 unique_numbers = list(set(numbers))
 print(unique_numbers)
+# OR
+numbers = [1, 2, 2, 3, 4, 4, 5]
+result = []
+for num in numbers:
+    if num not in result:
+        result.append(num)
+print(result)
 '''
 A set automatically stores only unique elements. So I convert the list into a set to remove duplicates and then convert it back into a list.”
 '''
@@ -174,7 +192,7 @@ print(common)
 I create an empty list to store common elements. Then I iterate through the first list and check whether each element exists in the second list. If it exists, I append it to the result list.”
 '''
 
-# 16. Find Missing Number ⭐⭐⭐⭐ - Suppose: [1, 2, 3, 5] Expected numbers are 1 to 5.
+# 16. Find Missing Number ⭐⭐⭐⭐ ⭐ - Suppose: [1, 2, 3, 5] Expected numbers are 1 to 5.
 numbers = [1, 2, 3, 5]
 n = 5
 expected_sum = n * (n + 1) // 2
@@ -185,7 +203,7 @@ print(missing)
 I calculate the expected sum from 1 to n using the mathematical formula n * (n + 1) // 2. Then I calculate the actual sum of the list. The difference between these two sums gives me the missing number.”
 '''
 
-# 17. Check Anagram ⭐⭐⭐⭐ - Two strings are anagrams if they contain the same characters with the same frequency.
+# 17. Check Anagram ⭐⭐⭐⭐ ⭐ - Two strings are anagrams if they contain the same characters with the same frequency.
 str1 = "listen"
 str2 = "silent"
 if sorted(str1) == sorted(str2):
@@ -196,7 +214,7 @@ else:
 I sort both strings alphabetically. If both sorted strings are equal, they contain the same characters with the same frequency, so they are anagrams.”
 '''
 
-# 18. Find First Non-Repeating Character ⭐⭐⭐⭐
+# 18. Find First Non-Repeating Character ⭐⭐⭐⭐ ⭐
 text = "aabbcdde"
 
 for char in text:
@@ -219,7 +237,7 @@ print(numbers)
 I compare each element with the elements after it. If the current element is greater than a later element, I swap them. By repeatedly doing this, smaller values move toward the beginning of the list.”
 '''
 
-# 20. Find Duplicate Elements ⭐⭐⭐⭐
+# 20. Find Duplicate Elements ⭐⭐⭐⭐⭐
 numbers = [1, 2, 3, 2, 4, 5, 3]
 duplicates = []
 for num in numbers:
@@ -242,3 +260,121 @@ print(duplicates)
 I iterate through every number and check how many times it occurs using count(). If its frequency is greater than one, it is a duplicate. I also check num not in duplicates so that I don't add the same duplicate multiple times.”
 '''
 
+# 21. Count Frequency of Elements
+numbers = [1, 2, 2, 3, 3, 3]
+frequency = {}
+for num in numbers:
+    frequency[num] = frequency.get(num, 0) + 1
+print(frequency)
+
+# 22. Count Characters in a String
+text = "programming"
+frequency = {}
+for char in text:
+    frequency[char] = frequency.get(char, 0) + 1
+print(frequency)
+
+# 23. Reverse Words in a Sentence
+sentence = "I love Python"
+words = sentence.split()
+reverse_words = words[::-1]
+result = " ".join(reverse_words)
+print(result)
+
+# 24. Find Maximum Occurring Character
+text = "programming"
+frequency = {}
+for char in text:
+    frequency[char] = frequency.get(char, 0) + 1
+maximum = max(frequency, key=frequency.get)
+print(maximum)
+
+# 25. Flatten a Nested List - Input: numbers = [[1, 2], [3, 4], [5]] and Output: [1, 2, 3, 4, 5]
+numbers = [[1, 2], [3, 4], [5]]
+result = []
+for sublist in numbers:
+    for num in sublist:
+        result.append(num)
+print(result)
+
+# 26. Sort List Without sort()
+numbers = [5, 2, 8, 1, 3]
+for i in range(len(numbers)):
+    for j in range(i + 1, len(numbers)):
+        if numbers[i] > numbers[j]:
+            numbers[i], numbers[j] = numbers[j], numbers[i]
+print(numbers)
+
+# 27. Find Even and Odd Numbers
+numbers = [1, 2, 3, 4, 5, 6]
+even = []
+odd = []
+for num in numbers:
+    if num % 2 == 0:
+        even.append(num)
+    else:
+        odd.append(num)
+print("Even:", even)
+print("Odd:", odd)
+
+# 28. Separate Positive and Negative Numbers
+numbers = [-2, 5, -7, 8, 0, -1]
+positive = []
+negative = []
+for num in numbers:
+    if num >= 0:
+        positive.append(num)
+    else:
+        negative.append(num)
+print(positive)
+print(negative)
+
+# 29. Find Common Characters
+str1 = "python"
+str2 = "programming"
+common = set(str1) & set(str2)
+print(common)
+
+# 30. Find Length of String Without len()
+text = "python"
+count = 0
+for char in text:
+    count += 1
+print(count)
+
+
+'''
+🔥 Tier A — Do first
+#9 Character Frequency
+#17 Anagram
+#18 First Non-Repeating Character
+#20 Duplicate Elements
+#16 Missing Number
+#2 Palindrome
+#1 Reverse String
+#7 Second Largest
+#4 Fibonacci
+#5 Prime
+🟠 Tier B — Do next
+#10 Remove Duplicates
+#6 Largest Number
+#19 Sort Without sort()
+#24 Maximum Occurring Character
+#23 Reverse Words
+#15 Common Elements
+#25 Flatten Nested List
+#12 Sum of Digits
+#13 Reverse Number
+#14 Armstrong Number
+🟡 Tier C — Good basics, lower priority
+#3 Factorial
+#8 Count Vowels
+#11 Even/Odd
+#21 Element Frequency
+#22 Character Count — overlaps heavily with #9
+#26 Sort Without sort() — duplicate of #19
+#27 Even/Odd — duplicate of #11
+#28 Positive/Negative
+#29 Common Characters
+#30 String Length Without len()
+'''
