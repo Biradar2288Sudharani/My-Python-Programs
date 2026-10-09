@@ -342,6 +342,11 @@ for char in text:
     count += 1
 print(count)
 
+# 31. Find the 
+a=10
+b=20
+c=a*b
+print(c)
 
 '''
 🔥 Tier A — Do first
