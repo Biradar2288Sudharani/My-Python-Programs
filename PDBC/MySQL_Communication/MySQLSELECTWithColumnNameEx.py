@@ -7,11 +7,11 @@ def selectrecords():
             cur = con.cursor()
             # Accept the table name
             Table_Name = input("Enter table name : ")
-            sr = "SELECT * FROM %s", Table_Name
+            sr = "SELECT * FROM {}".format(Table_Name)
             cur.execute(sr)
             # code of getting column names
             print("*"*50)
-            cloinfo = cur.description
+            colinfo = cur.description
             for col in colinfo:
                 print(col[0], end = "\t\t")
             print() 
@@ -23,6 +23,10 @@ def selectrecords():
                     print("{}". format(val), end="\t\t")
                 print()
             print("*"*50)
+            ch = input("Do you want to see another table ? (Yes/No) : ")
+            if ch.lower() == "no":
+                print("Thanks for using this program !!!")
+                break
         except mysql.connector.DatabaseError as db:
             print("Problem in MySQL DB : ", db)
 # Main Program

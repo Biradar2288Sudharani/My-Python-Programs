@@ -1,5 +1,6 @@
 # WAPP which will remove the table
 # program for removing Employees table in 9ambatch database
+
 import mysql.connector
 def removetable():
     try:

@@ -1,4 +1,4 @@
-# WAPP which will drop or remove any any database
+# WAPP which will drop or remove any database
 # Program for droping or removing database from MySQL
 import mysql.connector
 def dropdatabase():

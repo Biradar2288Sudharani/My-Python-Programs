@@ -1,5 +1,6 @@
 # WAPP which will alter the column size
 # Program for alter the column sizes in Employee table and 9ambatch database
+
 import mysql.connector
 def altercolumnsize():
     try:

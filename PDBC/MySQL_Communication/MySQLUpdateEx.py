@@ -15,7 +15,7 @@ def recordupdate():
             if(cur.rowcount > 0):
                 print("{} Employee record updated". format(cur.rowcount))
             else:
-                print("EMployee record does not exist")
+                print("Employee record does not exist")
             print("*"*50)
             ch = input("Do you want to update another record(Yes/No)")
             if(ch.lower()=="no"):

@@ -16,6 +16,7 @@
 # insertrecords()
 
 # OR using INPUT() method
+
 import mysql.connector
 def insertrecords():
     while(True):

@@ -1,5 +1,6 @@
 # WAPP which will create a table Employee with suitable columns in 9ambatch database of mysql
 # Program for creating a table employee in 9ambatch of mysql
+
 import mysql.connector
 def tablecreate():
     try:

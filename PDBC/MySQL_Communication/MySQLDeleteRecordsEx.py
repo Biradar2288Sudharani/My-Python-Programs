@@ -24,7 +24,7 @@ def deleterecord():
             # Prepare the query and execute
             print("*"*50)
             Emp_ID = int(input("Enter Employee ID for deleting record : "))
-            cur.execute("DELETE FROM Employee WHERE Emp_ID = %d" , Emp_ID)
+            cur.execute("DELETE FROM Employee WHERE Emp_ID = %s" , (Emp_ID, ))
             con.commit()
             if(cur.rowcount>0):
                 print("{} Employee record deleted". format(cur.rowcount))
