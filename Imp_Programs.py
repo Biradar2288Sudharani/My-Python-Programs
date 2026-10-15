@@ -36,3 +36,20 @@ for i in range(n):
 I initialize the first two Fibonacci numbers as 0 and 1. In every iteration, I print a. Then I simultaneously update a to b and b to a + b. 
 Python's multiple assignment allows me to update both variables in one statement.”
 '''
+
+# 5. Check Prime Number ⭐⭐⭐⭐
+n = 17
+if n <= 1:
+    print("Not Prime")
+else:
+    for i in range(2, n):
+        if n % i == 0:
+            print("Not Prime")
+            break
+    else:
+        print("Prime")
+'''
+A prime number is greater than 1 and has only two factors: 1 and itself. So I first check whether the number is less than or equal to 1. 
+Then I check whether any number from 2 to n-1 divides it completely. If n % i is zero, it has another factor and is not prime. 
+If the loop completes without finding a divisor, it is prime.”
+'''
