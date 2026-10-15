@@ -113,3 +113,18 @@ print(frequency)
 I use a dictionary because dictionaries store data as key-value pairs. Each character becomes a key and its occurrence count becomes the value. 
 If the character already exists, I increase its count; otherwise, I initialize it to 1.”
 '''
+
+# 10. Remove Duplicates from a List ⭐⭐⭐
+numbers = [1, 2, 2, 3, 4, 4, 5]
+unique_numbers = list(set(numbers))
+print(unique_numbers)
+# OR
+numbers = [1, 2, 2, 3, 4, 4, 5]
+result = []
+for num in numbers:
+    if num not in result:
+        result.append(num)
+print(result)
+'''
+A set automatically stores only unique elements. So I convert the list into a set to remove duplicates and then convert it back into a list.”
+'''
