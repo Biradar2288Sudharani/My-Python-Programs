@@ -76,3 +76,13 @@ print(second_largest)
 I initially assume the first element is the largest. Then I iterate through every element. 
 If the current number is greater than largest, I update largest. After the loop finishes, it contains the maximum value.”
 '''
+
+# 7. Find Second Largest Number ⭐⭐⭐
+numbers = [10, 25, 7, 45, 18]
+unique_numbers = list(set(numbers))
+unique_numbers.sort()
+print(unique_numbers[-2])
+'''
+“First, I convert the list into a set to remove duplicate values. Then I convert it back into a list and sort it in ascending order. 
+The last element is the largest and the second-last element is the second largest.”
+'''
