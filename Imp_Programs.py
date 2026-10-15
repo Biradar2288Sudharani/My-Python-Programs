@@ -14,3 +14,13 @@ I first store the string. Then I reverse the string using slicing and compare it
 If both are equal, it is a palindrome; otherwise it is not
 '''
 
+# 3. Find Factorial of a Number ⭐⭐⭐
+n = 5
+factorial = 1
+for i in range(1, n + 1):
+    factorial = factorial * i
+print(factorial)
+'''
+I initialize factorial to 1 because multiplication should start from 1. Then the for loop runs from 1 to n. In every iteration, I multiply the current factorial value by i. For 5, 
+the calculation becomes 1 × 2 × 3 × 4 × 5, which gives 120.”
+'''
