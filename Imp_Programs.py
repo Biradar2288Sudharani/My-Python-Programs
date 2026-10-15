@@ -24,3 +24,15 @@ print(factorial)
 I initialize factorial to 1 because multiplication should start from 1. Then the for loop runs from 1 to n. In every iteration, I multiply the current factorial value by i. For 5, 
 the calculation becomes 1 × 2 × 3 × 4 × 5, which gives 120.”
 '''
+
+# 4. Fibonacci Series ⭐⭐⭐⭐
+n = 7
+a = 0
+b = 1
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
+'''
+I initialize the first two Fibonacci numbers as 0 and 1. In every iteration, I print a. Then I simultaneously update a to b and b to a + b. 
+Python's multiple assignment allows me to update both variables in one statement.”
+'''
