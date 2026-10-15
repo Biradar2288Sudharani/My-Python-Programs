@@ -99,3 +99,17 @@ print(count)
 I create a string containing all vowels and initialize the counter to zero. Then I iterate through every character. 
 If the character exists in the vowels string, I increment the counter. Finally, I print the total number of vowels.”
 '''
+
+# 9. Count Frequency of Characters ⭐⭐⭐⭐⭐
+text = "banana"
+frequency = {}
+for char in text:
+    if char in frequency:
+        frequency[char] += 1
+    else:
+        frequency[char] = 1
+print(frequency)
+'''
+I use a dictionary because dictionaries store data as key-value pairs. Each character becomes a key and its occurrence count becomes the value. 
+If the character already exists, I increase its count; otherwise, I initialize it to 1.”
+'''
