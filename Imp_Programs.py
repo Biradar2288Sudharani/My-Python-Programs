@@ -213,3 +213,14 @@ else:
 '''
 I sort both strings alphabetically. If both sorted strings are equal, they contain the same characters with the same frequency, so they are anagrams.”
 '''
+
+# 18. Find First Non-Repeating Character ⭐⭐⭐⭐ ⭐
+text = "aabbcdde"
+
+for char in text:
+    if text.count(char) == 1:
+        print(char)
+        break
+'''
+I iterate through each character and use count() to find how many times that character occurs. If the count is exactly one, it is the first non-repeating character, so I print it and use break to stop the loop.”
+'''
