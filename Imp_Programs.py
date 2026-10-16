@@ -151,3 +151,15 @@ print(total)
 '''
 I initialize total to zero. The modulus operator extracts the last digit. I add that digit to total. Then integer division by 10 removes the last digit. I repeat this until the number becomes zero.”
 '''
+
+# 13. Reverse a Number ⭐⭐⭐
+n = 1234
+reverse = 0
+while n > 0:
+    digit = n % 10
+    reverse = reverse * 10 + digit
+    n = n // 10
+print(reverse)
+'''
+I extract the last digit using % 10. Then I shift the existing reverse number one position to the left by multiplying it by 10 and add the extracted digit. Finally, I remove the last digit from the original number using // 10.”
+'''
