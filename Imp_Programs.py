@@ -237,3 +237,13 @@ print(numbers)
 I compare each element with the elements after it. If the current element is greater than a later element, I swap them. By repeatedly doing this, smaller values move toward the beginning of the list.”
 '''
 
+# 20. Find Duplicate Elements ⭐⭐⭐⭐⭐
+numbers = [1, 2, 3, 2, 4, 5, 3]
+duplicates = []
+for num in numbers:
+    if numbers.count(num) > 1 and num not in duplicates:
+        duplicates.append(num)
+print(duplicates)
+'''
+I iterate through every number and check how many times it occurs using count(). If its frequency is greater than one, it is a duplicate. I also check num not in duplicates so that I don't add the same duplicate multiple times.”
+'''
