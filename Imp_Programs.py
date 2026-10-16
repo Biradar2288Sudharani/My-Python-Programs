@@ -163,3 +163,19 @@ print(reverse)
 '''
 I extract the last digit using % 10. Then I shift the existing reverse number one position to the left by multiplying it by 10 and add the extracted digit. Finally, I remove the last digit from the original number using // 10.”
 '''
+
+# 14. Check Armstrong Number ⭐⭐⭐
+n = 153
+total = 0
+temp = n
+while temp > 0:
+    digit = temp % 10
+    total += digit ** 3
+    temp = temp // 10
+if total == n:
+    print("Armstrong")
+else:
+    print("Not Armstrong")
+'''
+“I store the original number in n and make a temporary copy because I need the original number for comparison later. I extract each digit using % 10, cube the digit, and add it to total. After processing all digits, I compare the calculated total with the original number.”
+'''
