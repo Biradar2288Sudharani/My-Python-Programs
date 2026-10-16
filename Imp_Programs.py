@@ -224,3 +224,16 @@ for char in text:
 '''
 I iterate through each character and use count() to find how many times that character occurs. If the count is exactly one, it is the first non-repeating character, so I print it and use break to stop the loop.”
 '''
+
+# 19. Sort a List Without sort() ⭐⭐⭐⭐
+numbers = [5, 2, 8, 1, 3]
+for i in range(len(numbers)):
+    for j in range(i + 1, len(numbers)):
+        if numbers[i] > numbers[j]:
+            numbers[i], numbers[j] = numbers[j], numbers[i]
+print(numbers)
+
+'''
+I compare each element with the elements after it. If the current element is greater than a later element, I swap them. By repeatedly doing this, smaller values move toward the beginning of the list.”
+'''
+
