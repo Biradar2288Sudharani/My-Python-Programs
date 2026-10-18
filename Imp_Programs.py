@@ -324,3 +324,10 @@ str2 = "programming"
 common = set(str1) & set(str2)
 print(common)
 
+# 30. Find Length of String Without len()
+text = "python"
+count = 0
+for char in text:
+    count += 1
+print(count)
+
