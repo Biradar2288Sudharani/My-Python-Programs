@@ -305,3 +305,16 @@ for num in numbers:
 print("Even:", even)
 print("Odd:", odd)
 
+# 28. Separate Positive and Negative Numbers
+numbers = [-2, 5, -7, 8, 0, -1]
+positive = []
+negative = []
+for num in numbers:
+    if num >= 0:
+        positive.append(num)
+    else:
+        negative.append(num)
+print(positive)
+print(negative)
+
+
