@@ -284,3 +284,12 @@ for sublist in numbers:
     for num in sublist:
         result.append(num)
 print(result)
+
+# 26. Sort List Without sort()
+numbers = [5, 2, 8, 1, 3]
+for i in range(len(numbers)):
+    for j in range(i + 1, len(numbers)):
+        if numbers[i] > numbers[j]:
+            numbers[i], numbers[j] = numbers[j], numbers[i]
+print(numbers)
+
