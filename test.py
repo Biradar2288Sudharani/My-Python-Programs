@@ -305,20 +305,6 @@ for i in range(len(numbers)):
             numbers[i], numbers[j] = numbers[j], numbers[i]
 print(numbers)
 
-# 27. Find Even and Odd Numbers
-numbers = [1, 2, 3, 4, 5, 6]
-even = []
-odd = []
-for num in numbers:
-    if num % 2 == 0:
-        even.append(num)
-    else:
-        odd.append(num)
-print("Even:", even)
-print("Odd:", odd)
-
-
-
 # 31. Find the 
 a=10
 b=20
