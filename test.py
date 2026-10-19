@@ -329,12 +329,6 @@ for num in numbers:
 print(positive)
 print(negative)
 
-# 29. Find Common Characters
-str1 = "python"
-str2 = "programming"
-common = set(str1) & set(str2)
-print(common)
-
 
 # 31. Find the 
 a=10
