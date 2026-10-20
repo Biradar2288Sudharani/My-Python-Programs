@@ -289,13 +289,6 @@ for char in text:
 maximum = max(frequency, key=frequency.get)
 print(maximum)
 
-# 25. Flatten a Nested List - Input: numbers = [[1, 2], [3, 4], [5]] and Output: [1, 2, 3, 4, 5]
-numbers = [[1, 2], [3, 4], [5]]
-result = []
-for sublist in numbers:
-    for num in sublist:
-        result.append(num)
-print(result)
 
 # 31. Find the 
 a=10
