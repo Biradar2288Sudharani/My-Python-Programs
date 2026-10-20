@@ -267,13 +267,6 @@ for num in numbers:
     frequency[num] = frequency.get(num, 0) + 1
 print(frequency)
 
-# 22. Count Characters in a String
-text = "programming"
-frequency = {}
-for char in text:
-    frequency[char] = frequency.get(char, 0) + 1
-print(frequency)
-
 # 31. Find the 
 a=10
 b=20
