@@ -274,13 +274,6 @@ for char in text:
     frequency[char] = frequency.get(char, 0) + 1
 print(frequency)
 
-# 23. Reverse Words in a Sentence
-sentence = "I love Python"
-words = sentence.split()
-reverse_words = words[::-1]
-result = " ".join(reverse_words)
-print(result)
-
 # 31. Find the 
 a=10
 b=20
