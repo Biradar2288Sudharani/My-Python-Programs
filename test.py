@@ -281,15 +281,6 @@ reverse_words = words[::-1]
 result = " ".join(reverse_words)
 print(result)
 
-# 24. Find Maximum Occurring Character
-text = "programming"
-frequency = {}
-for char in text:
-    frequency[char] = frequency.get(char, 0) + 1
-maximum = max(frequency, key=frequency.get)
-print(maximum)
-
-
 # 31. Find the 
 a=10
 b=20
