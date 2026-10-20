@@ -260,13 +260,6 @@ print(duplicates)
 I iterate through every number and check how many times it occurs using count(). If its frequency is greater than one, it is a duplicate. I also check num not in duplicates so that I don't add the same duplicate multiple times.”
 '''
 
-# 21. Count Frequency of Elements
-numbers = [1, 2, 2, 3, 3, 3]
-frequency = {}
-for num in numbers:
-    frequency[num] = frequency.get(num, 0) + 1
-print(frequency)
-
 # 31. Find the 
 a=10
 b=20
