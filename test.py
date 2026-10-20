@@ -260,12 +260,6 @@ print(duplicates)
 I iterate through every number and check how many times it occurs using count(). If its frequency is greater than one, it is a duplicate. I also check num not in duplicates so that I don't add the same duplicate multiple times.”
 '''
 
-# 31. Find the 
-a=10
-b=20
-c=a*b
-print(c)
-
 '''
 🔥 Tier A — Do first
 #9 Character Frequency
