@@ -203,17 +203,6 @@ print(missing)
 I calculate the expected sum from 1 to n using the mathematical formula n * (n + 1) // 2. Then I calculate the actual sum of the list. The difference between these two sums gives me the missing number.”
 '''
 
-# 17. Check Anagram ⭐⭐⭐⭐ ⭐ - Two strings are anagrams if they contain the same characters with the same frequency.
-str1 = "listen"
-str2 = "silent"
-if sorted(str1) == sorted(str2):
-    print("Anagram")
-else:
-    print("Not Anagram")
-'''
-I sort both strings alphabetically. If both sorted strings are equal, they contain the same characters with the same frequency, so they are anagrams.”
-'''
-
 '''
 🔥 Tier A — Do first
 #9 Character Frequency
