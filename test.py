@@ -192,17 +192,6 @@ print(common)
 I create an empty list to store common elements. Then I iterate through the first list and check whether each element exists in the second list. If it exists, I append it to the result list.”
 '''
 
-# 16. Find Missing Number ⭐⭐⭐⭐ ⭐ - Suppose: [1, 2, 3, 5] Expected numbers are 1 to 5.
-numbers = [1, 2, 3, 5]
-n = 5
-expected_sum = n * (n + 1) // 2
-actual_sum = sum(numbers)
-missing = expected_sum - actual_sum
-print(missing)
-'''
-I calculate the expected sum from 1 to n using the mathematical formula n * (n + 1) // 2. Then I calculate the actual sum of the list. The difference between these two sums gives me the missing number.”
-'''
-
 '''
 🔥 Tier A — Do first
 #9 Character Frequency
