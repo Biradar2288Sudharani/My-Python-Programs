@@ -248,18 +248,6 @@ print(duplicates)
 I iterate through every number and check how many times it occurs using count(). If its frequency is greater than one, it is a duplicate. I also check num not in duplicates so that I don't add the same duplicate multiple times.”
 '''
 
-
-# 20. Find Duplicate Elements ⭐⭐⭐⭐
-numbers = [1, 2, 3, 2, 4, 5, 3]
-duplicates = []
-for num in numbers:
-    if numbers.count(num) > 1 and num not in duplicates:
-        duplicates.append(num)
-print(duplicates)
-'''
-I iterate through every number and check how many times it occurs using count(). If its frequency is greater than one, it is a duplicate. I also check num not in duplicates so that I don't add the same duplicate multiple times.”
-'''
-
 '''
 🔥 Tier A — Do first
 #9 Character Frequency
