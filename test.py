@@ -140,18 +140,6 @@ for num in numbers:
 I iterate through every number in the list. I use the modulus operator to check the remainder when dividing by 2. If the remainder is zero, the number is even; otherwise, it is odd.”
 '''
 
-# 12. Sum of Digits ⭐⭐⭐
-n = 12345
-total = 0
-while n > 0:
-    digit = n % 10
-    total += digit
-    n = n // 10
-print(total)
-'''
-I initialize total to zero. The modulus operator extracts the last digit. I add that digit to total. Then integer division by 10 removes the last digit. I repeat this until the number becomes zero.”
-'''
-
 '''
 🔥 Tier A — Do first
 #9 Character Frequency
