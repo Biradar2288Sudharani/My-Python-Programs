@@ -180,18 +180,6 @@ else:
 “I store the original number in n and make a temporary copy because I need the original number for comparison later. I extract each digit using % 10, cube the digit, and add it to total. After processing all digits, I compare the calculated total with the original number.”
 '''
 
-# 15. Find Common Elements Between Two Lists ⭐⭐⭐
-list1 = [1, 2, 3, 4]
-list2 = [3, 4, 5, 6]
-common = []
-for num in list1:
-    if num in list2:
-        common.append(num)
-print(common)
-'''
-I create an empty list to store common elements. Then I iterate through the first list and check whether each element exists in the second list. If it exists, I append it to the result list.”
-'''
-
 '''
 🔥 Tier A — Do first
 #9 Character Frequency
