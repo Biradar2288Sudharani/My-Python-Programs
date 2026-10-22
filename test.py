@@ -129,17 +129,6 @@ print(result)
 A set automatically stores only unique elements. So I convert the list into a set to remove duplicates and then convert it back into a list.”
 '''
 
-# 11. Find Even and Odd Numbers ⭐⭐⭐
-numbers = [1, 2, 3, 4, 5, 6]
-for num in numbers:
-    if num % 2 == 0:
-        print(num, "Even")
-    else:
-        print(num, "Odd")
-'''
-I iterate through every number in the list. I use the modulus operator to check the remainder when dividing by 2. If the remainder is zero, the number is even; otherwise, it is odd.”
-'''
-
 '''
 🔥 Tier A — Do first
 #9 Character Frequency
