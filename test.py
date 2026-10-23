@@ -54,29 +54,6 @@ Then I check whether any number from 2 to n-1 divides it completely. If n % i is
 If the loop completes without finding a divisor, it is prime.”
 '''
 
-# 6. Find Largest Number in a List ⭐⭐⭐⭐
-numbers = [10, 25, 7, 45, 18]
-largest = numbers[0]
-for num in numbers:
-    if num > largest:
-        largest = num
-print(largest)
-# OR - Without sorting
-numbers = [10, 25, 5, 40, 15]
-largest = float('-inf')
-second_largest = float('-inf')
-for num in numbers:
-    if num > largest:
-        second_largest = largest
-        largest = num
-    elif num > second_largest and num != largest:
-        second_largest = num
-print(second_largest)
-'''
-I initially assume the first element is the largest. Then I iterate through every element. 
-If the current number is greater than largest, I update largest. After the loop finishes, it contains the maximum value.”
-'''
-
 '''
 🔥 Tier A — Do first
 #9 Character Frequency
