@@ -87,19 +87,6 @@ print(unique_numbers[-2])
 The last element is the largest and the second-last element is the second largest.”
 '''
 
-# 8. Count Vowels in a String ⭐⭐⭐
-text = "python programming"
-vowels = "aeiou"
-count = 0
-for char in text:
-    if char in vowels:
-        count += 1
-print(count)
-'''
-I create a string containing all vowels and initialize the counter to zero. Then I iterate through every character. 
-If the character exists in the vowels string, I increment the counter. Finally, I print the total number of vowels.”
-'''
-
 '''
 🔥 Tier A — Do first
 #9 Character Frequency
