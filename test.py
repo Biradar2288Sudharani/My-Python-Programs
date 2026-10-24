@@ -16,14 +16,6 @@
 #19 Sort Without sort()
 #24 Maximum Occurring Character
 #23 Reverse Words
-#15 Common Elements
-#25 Flatten Nested List
-#12 Sum of Digits
-#13 Reverse Number
-#14 Armstrong Number
-🟡 Tier C — Good basics, lower priority
-#3 Factorial
-#8 Count Vowels
 '''
 
 
