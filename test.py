@@ -34,8 +34,6 @@
 #30 String Length Without len()
 '''
 
-print("Hello Sudha!")
-
 
 
 
