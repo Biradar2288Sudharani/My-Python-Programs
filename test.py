@@ -1,8 +1,3 @@
-# 1. Reverse a String ⭐⭐⭐⭐⭐
-text = "python"
-reverse = text[::-1]
-print(reverse)
-
 '''
 🔥 Tier A — Do first
 #9 Character Frequency
