@@ -330,18 +330,3 @@ count = 0
 for char in text:
     count += 1
 print(count)
-
-print("Sudha")
-
-print("Shankar")
-
-print("Sachi")
-
-print("Sagar")
-
-print("Srushti")
-
-print("Sanvi")
-
-
-
