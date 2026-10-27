@@ -333,11 +333,5 @@ print(count)
 
 print("Sudha")
 
-print("Shankar")
 
-print("Sachin")
-
-print("Sagar")
-
-print("Srushti")
 
