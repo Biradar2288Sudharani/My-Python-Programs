@@ -5,7 +5,6 @@ def dispvalues(lst):
     for val in lst:
         print(val)
     print("-------------")
-    
 # main Program
 lst1=[10,"anna",3.14,True,3+2j]   
 dispvalues(lst1)          # Function Call with list object
