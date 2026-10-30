@@ -30,4 +30,3 @@ set={10,"anna",3.14,True,3+2j}
 dispvalues(set)           # Function Call with set object
 dict={10:"python",20:"cpp",30:"C",40:"java"}   
 dispvalues(dict)          # Function Call with dict object
-
