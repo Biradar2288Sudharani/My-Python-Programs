@@ -25,6 +25,3 @@ c.getparentprop()
 c.getchildprop()
 c.computetotprop()
 c.dispprop()
-
-
-
